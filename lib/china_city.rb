@@ -83,7 +83,7 @@ module ChinaCity
         # }
         @list = {}
         #@see: https://github.com/cn/GB2260
-        json = JSON.parse(File.read("#{Engine.root}/db/areas.json"))
+        json = JSON.parse(File.read("#{Engine.root}/db/china_city_areas_2016.08.21.json"))
         streets = json.values.flatten
         streets.each do |street|
           id = street['id']
